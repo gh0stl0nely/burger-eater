@@ -1,0 +1,46 @@
+<form style="text-align:center; margin-top:20px;" method="POST" action="/">
+    <h1>Burger Eater</h1>
+    <p>What are we eating today?</p>
+    <input name="burger" placeholder="Enter burger name">
+    <button type="submit" class="btn btn-dark">Order</button>
+</form>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <!-- List of unfinished burger -->
+        <div style="text-align: center;" class="col shadow p-3 mb-5 bg-white rounded">
+            <p>Ordered Burgers</p>
+            <div id="ordered">
+                {{#each finalResult}}
+                {{#unless this.isDevour}}
+                <div id="{{this.id}}" style="margin-top: 20px;" class="card text-center">
+                    <div class="card-body">
+                        <p class="card-text">{{this.name}}</p>
+                        <button class="btn btn-primary devourBtn">Devour</button>
+                    </div>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+
+        <!-- List of devoured burger -->
+        <div style="text-align: center; margin-left: 10px;" class="col shadow p-3 mb-5 bg-white rounded">
+            <p>Devoured Burgers</p>
+            <div id="devoured">
+                {{#each finalResult}}
+                {{#if this.isDevour}}
+                <div id="{{this.id}}" style="margin-top: 20px;" class="card text-center">
+                    <div class="card-body">
+                        <p class="card-text">{{this.name}}</p>
+                        <button class="btn btn-danger tossBtn">Toss</button>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 # Eat The Burger
 
-This is a simple MVC-based web application that simulates ordering, eating and tossing burgers.
+This is a simple MVC-based web application that simulates ordering, eating and digesting burgers.
 
 ## Demo
 
@@ -19,6 +19,7 @@ Test the app -> [Demo]()
 * [Handlebars](https://handlebarsjs.com/) - Templating engine
 * [jQuery](https://jquery.com/) - Javascript framework for DOM manipulation
 * [MySQL](https://www.mysql.com/) - Database
+* [Heroku](https://www.heroku.com/) - For application deployment
 
 ## Things I learned and reviewed
 
@@ -28,6 +29,7 @@ Test the app -> [Demo]()
 * AJAX
 * Model-View-Controller pattern (New)
 * DOM Manipulation with jQuery 
+* Querying MySQL Database
 
 ## Author
 

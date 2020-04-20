@@ -4,7 +4,7 @@ This is a simple MVC-based web application that simulates ordering, eating and d
 
 ## Demo
 
-Test the app -> [Demo]()
+Test the app -> [Demo](https://arcane-tundra-83098.herokuapp.com/)
 
 ## GIF demonstration 
 
